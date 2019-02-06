@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C-sharp_p97\C-sharp_p97\bin\Debug\C-sharp_p97.exe.config
+C:\Users\Keith\source\repos\C-sharp_p97\C-sharp_p97\bin\Debug\C-sharp_p97.exe
+C:\Users\Keith\source\repos\C-sharp_p97\C-sharp_p97\bin\Debug\C-sharp_p97.pdb
+C:\Users\Keith\source\repos\C-sharp_p97\C-sharp_p97\obj\Debug\C-sharp_p97.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C-sharp_p97\C-sharp_p97\obj\Debug\C-sharp_p97.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C-sharp_p97\C-sharp_p97\obj\Debug\C-sharp_p97.exe
+C:\Users\Keith\source\repos\C-sharp_p97\C-sharp_p97\obj\Debug\C-sharp_p97.pdb
