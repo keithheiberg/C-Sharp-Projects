@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C-sharp_p92\C-sharp_p92\bin\Debug\C-sharp_p92.exe.config
+C:\Users\Keith\source\repos\C-sharp_p92\C-sharp_p92\bin\Debug\C-sharp_p92.exe
+C:\Users\Keith\source\repos\C-sharp_p92\C-sharp_p92\bin\Debug\C-sharp_p92.pdb
+C:\Users\Keith\source\repos\C-sharp_p92\C-sharp_p92\obj\Debug\C-sharp_p92.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C-sharp_p92\C-sharp_p92\obj\Debug\C-sharp_p92.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C-sharp_p92\C-sharp_p92\obj\Debug\C-sharp_p92.exe
+C:\Users\Keith\source\repos\C-sharp_p92\C-sharp_p92\obj\Debug\C-sharp_p92.pdb
