@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C-sharp_p75\C-sharp_p75\bin\Debug\C-sharp_p75.exe.config
+C:\Users\Keith\source\repos\C-sharp_p75\C-sharp_p75\bin\Debug\C-sharp_p75.exe
+C:\Users\Keith\source\repos\C-sharp_p75\C-sharp_p75\bin\Debug\C-sharp_p75.pdb
+C:\Users\Keith\source\repos\C-sharp_p75\C-sharp_p75\obj\Debug\C-sharp_p75.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C-sharp_p75\C-sharp_p75\obj\Debug\C-sharp_p75.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C-sharp_p75\C-sharp_p75\obj\Debug\C-sharp_p75.exe
+C:\Users\Keith\source\repos\C-sharp_p75\C-sharp_p75\obj\Debug\C-sharp_p75.pdb
