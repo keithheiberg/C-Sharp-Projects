@@ -102,11 +102,13 @@ class Program
         }
         string choice = Console.ReadLine();
         string snappyComeback = "";
+        string indices = "";
         while (m <= 2)
         {
             if (choice == bandList[m])
             {
-                snappyComeback = "You're one hep cat, daddy-o! Index = " + m;
+                indices = indices + m + " ";
+                snappyComeback = "You're one hep cat, daddy-o! Indices = " + indices;
             }
             else
             {
