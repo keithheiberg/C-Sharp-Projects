@@ -93,30 +93,29 @@ class Program
         // Create a loop that iterates through the list and then displays the indices of the array 
         // that contain matching text on the screen.
         // Add code to that above loop that tells a user if they put in text that isn’t in the List.
+
         List<string> bandList = new List<string> { "Sha", "Na", "Na" };
         int m = 0;
+        string inList = "Your string appeared at: ";
         Console.WriteLine("Please type a syllable to search for in the band's name:");
         foreach (string syllable in bandList)
         {
             Console.WriteLine(syllable);
         }
         string choice = Console.ReadLine();
-        string snappyComeback = "";
-        string indices = "";
-        while (m <= 2)
+        while (m < bandList.Count)
         {
             if (choice == bandList[m])
             {
-                indices = indices + m + " ";
-                snappyComeback = "You're one hep cat, daddy-o! Indices = " + indices;
-            }
-            else
-            {
-                snappyComeback = "Have you considered a career in computer programming?";
+                inList = inList + m.ToString() + " ";
             }
             m++;
         }
-        Console.WriteLine(snappyComeback);
+        if (inList == "Your string appeared at: ")
+        {
+            inList = "That's not contained in the list.";
+        }
+        Console.WriteLine(inList);
         // Console.ReadLine();
 
         // Create a List of strings that has at least two identical strings in the List. 
