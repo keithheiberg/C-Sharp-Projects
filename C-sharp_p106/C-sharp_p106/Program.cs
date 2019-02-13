@@ -20,46 +20,29 @@ class Program
         // and that the code after the try/catch block gets executed.
 
         List<int> uniqueList = new List<int> { 2, 4, 6, 8 };
-        Console.WriteLine("Please enter a nonzero number by which to divide each number in this list:");
+        int result = 0;
+        Console.WriteLine("Here's a list of numbers:");
         foreach (int value in uniqueList)
         {
             Console.WriteLine(value);
         }
+        Console.WriteLine("Please enter a nonzero number by which to divide each number in the list:");
         // Read user's number. 
-        int divisor = 2;
-        try
+        string divisorEntry = Console.ReadLine();
+        int divisor = Convert.ToInt32(divisorEntry);
+        foreach (int value in uniqueList)
         {
-            foreach (int value in uniqueList)
-            {
-                string divisorEntry = Console.ReadLine();
-                divisor = Convert.ToInt32(divisorEntry);
-            }
-        }
-        catch (FormatException fex)
-        {
-            Console.WriteLine(fex);
-        }
-        int result = 0;
-        try
-        {
-            foreach (int value in uniqueList)
+            try
             {
                 result = value / divisor;
                 Console.WriteLine(result);
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
-        catch (FormatException fex)
-        {
-            Console.WriteLine(fex);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-        finally
-        {
-            Console.WriteLine("Thank you. Have a great day!");
-            Console.ReadLine();
-        }
+        Console.WriteLine("Thank you. Have a great day!");
+        Console.ReadLine();
     }
 }
