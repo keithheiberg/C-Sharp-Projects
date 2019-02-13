@@ -28,13 +28,13 @@ class Program
         }
         Console.WriteLine("Please enter a nonzero number by which to divide each number in the list:");
         // Read user's number. 
-        string divisorEntry = Console.ReadLine();
-        int divisor = Convert.ToInt32(divisorEntry);
+
         foreach (int value in uniqueList)
         {
             try
             {
-                result = value / divisor;
+                string divisorEntry = Console.ReadLine();
+                int divisor = Convert.ToInt32(divisorEntry); result = value / divisor;
                 Console.WriteLine(result);
             }
             catch (Exception ex)
