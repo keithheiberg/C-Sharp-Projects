@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C-sharp_p114\C-sharp_p114\bin\Debug\C-sharp_p114.exe.config
+C:\Users\Keith\source\repos\C-sharp_p114\C-sharp_p114\bin\Debug\C-sharp_p114.exe
+C:\Users\Keith\source\repos\C-sharp_p114\C-sharp_p114\bin\Debug\C-sharp_p114.pdb
+C:\Users\Keith\source\repos\C-sharp_p114\C-sharp_p114\obj\Debug\C-sharp_p114.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C-sharp_p114\C-sharp_p114\obj\Debug\C-sharp_p114.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C-sharp_p114\C-sharp_p114\obj\Debug\C-sharp_p114.exe
+C:\Users\Keith\source\repos\C-sharp_p114\C-sharp_p114\obj\Debug\C-sharp_p114.pdb
