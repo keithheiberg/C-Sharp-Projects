@@ -1,0 +1,2 @@
+C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\obj\Debug\C-sharp_p117.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\obj\Debug\C-sharp_p117.csproj.CoreCompileInputs.cache
