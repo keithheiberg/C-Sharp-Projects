@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C-sharp_p126\C-sharp_p126\obj\Debug\C-sharp_p126.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C-sharp_p126\C-sharp_p126\obj\Debug\C-sharp_p126.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C-sharp_p126\C-sharp_p126\bin\Debug\C-sharp_p126.exe.config
+C:\Users\Keith\source\repos\C-sharp_p126\C-sharp_p126\bin\Debug\C-sharp_p126.exe
+C:\Users\Keith\source\repos\C-sharp_p126\C-sharp_p126\bin\Debug\C-sharp_p126.pdb
+C:\Users\Keith\source\repos\C-sharp_p126\C-sharp_p126\obj\Debug\C-sharp_p126.exe
+C:\Users\Keith\source\repos\C-sharp_p126\C-sharp_p126\obj\Debug\C-sharp_p126.pdb
