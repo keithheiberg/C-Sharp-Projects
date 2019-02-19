@@ -1,2 +1,7 @@
 C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\obj\Debug\C-sharp_p117.csprojAssemblyReference.cache
 C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\obj\Debug\C-sharp_p117.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\bin\Debug\C-sharp_p117.exe.config
+C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\bin\Debug\C-sharp_p117.exe
+C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\bin\Debug\C-sharp_p117.pdb
+C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\obj\Debug\C-sharp_p117.exe
+C:\Users\Keith\source\repos\C-sharp_p117\C-sharp_p117\obj\Debug\C-sharp_p117.pdb

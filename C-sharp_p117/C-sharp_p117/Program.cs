@@ -19,7 +19,7 @@ namespace C_sharp_p117
             // 5. Overload a method.
             // 6. Declare a class to be static.
 
-            //out parameter modifier(C# Reference)
+            //Online research: out parameter modifier(C# Reference)
             //•	03 / 05 / 2018
             //The out keyword causes arguments to be passed by reference. 
             // It is like the ref keyword, except that ref requires that 
@@ -60,7 +60,7 @@ namespace C_sharp_p117
             }
             else
             {
-                MultArg.DoIt(arg1, arg2, out int number);
+                MultArg.DoIt(arg1, out int number);
                 Console.WriteLine(number);
             }
 

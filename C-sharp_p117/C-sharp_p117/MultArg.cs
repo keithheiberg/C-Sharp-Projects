@@ -29,31 +29,32 @@ namespace C_sharp_p117
                 Console.WriteLine(ex.Message);
             }
         }
-    }
-    public static void DoIt(int arg1, int arg2 = 2, out int number)
-    {
-        try
+        public static void DoIt(int arg1, out int number, int arg2 = 2)
         {
-            Console.WriteLine("If you wish, enter a second--optional--integer:");
-            string argEntry2 = Console.ReadLine();
-            if (argEntry2 != "")
+            number = 0;
+            try
             {
-                arg2 = Convert.ToInt32(argEntry2);
+                Console.WriteLine("If you wish, enter a second--optional--integer:");
+                string argEntry2 = Console.ReadLine();
+                if (argEntry2 != "")
+                {
+                    arg2 = Convert.ToInt32(argEntry2);
+                }
             }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-        try
-        {
-            number = arg1 * arg2;
-            Console.WriteLine("The integer " + arg1 + " * the integer " + arg2 + " = " + number);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
+            try
+            {
+                number = arg1 * arg2;
+                Console.WriteLine("The integer " + arg1 + " * the integer " + arg2 + " = " + number);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
