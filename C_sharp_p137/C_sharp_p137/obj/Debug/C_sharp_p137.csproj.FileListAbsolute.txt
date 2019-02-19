@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C_sharp_p137\C_sharp_p137\bin\Debug\C_sharp_p137.exe.config
+C:\Users\Keith\source\repos\C_sharp_p137\C_sharp_p137\bin\Debug\C_sharp_p137.exe
+C:\Users\Keith\source\repos\C_sharp_p137\C_sharp_p137\bin\Debug\C_sharp_p137.pdb
+C:\Users\Keith\source\repos\C_sharp_p137\C_sharp_p137\obj\Debug\C_sharp_p137.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C_sharp_p137\C_sharp_p137\obj\Debug\C_sharp_p137.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C_sharp_p137\C_sharp_p137\obj\Debug\C_sharp_p137.exe
+C:\Users\Keith\source\repos\C_sharp_p137\C_sharp_p137\obj\Debug\C_sharp_p137.pdb
