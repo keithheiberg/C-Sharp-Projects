@@ -16,27 +16,23 @@ namespace C_sharp_p134
         // "Please enter an actual day of the week." to the console if an error occurs.
         {
             string dayEntry = "";
+            DateTime dateValue = DateTime.Now;
+            string today = dateValue.ToString("dddd");
+            Console.WriteLine("Please enter the current day of the week:");
             try
             {
-                DateTime dateValue = new DateTime();
-                Console.WriteLine("Please enter the current day of the week:");
                 dayEntry = Console.ReadLine();
-                if (dayEntry == dateValue.ToString("dddd"))
-                {
-                    Console.WriteLine("Correct!");
-                    Console.WriteLine("{0} = {1:D}", dayEntry, Enum.Parse(typeof(DaysOfTheWeek), dayEntry));
-                }
-                else
-                {
-                    Console.WriteLine("Sorry, that's not correct.");
-                }
+                Console.WriteLine("You entered: " + dayEntry);
+                Console.WriteLine("Today is: " + today);
+                Enum.Parse(typeof(DaysOfTheWeek), dayEntry);
             }
             catch (Exception ex)
                 {
-                    Console.WriteLine(ex + "please enter an actual day of the week.");
+                    Console.WriteLine(ex + "\nPlease enter an actual day of the week.");
                 }
             Console.ReadLine();
         }
+        public static DateTime Now { get; }
         public DayOfWeek DayOfWeek { get; }
         public enum DaysOfTheWeek
         {

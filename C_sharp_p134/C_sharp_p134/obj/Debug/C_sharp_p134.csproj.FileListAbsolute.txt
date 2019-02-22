@@ -5,3 +5,10 @@ C:\Users\Keith\source\repos\C_sharp_p134\C_sharp_p134\obj\Debug\C_sharp_p134.csp
 C:\Users\Keith\source\repos\C_sharp_p134\C_sharp_p134\obj\Debug\C_sharp_p134.csproj.CoreCompileInputs.cache
 C:\Users\Keith\source\repos\C_sharp_p134\C_sharp_p134\obj\Debug\C_sharp_p134.exe
 C:\Users\Keith\source\repos\C_sharp_p134\C_sharp_p134\obj\Debug\C_sharp_p134.pdb
+C:\Users\Keith\source\repos\C_sharp_p134_NEW\C_sharp_p134\bin\Debug\C_sharp_p134.exe.config
+C:\Users\Keith\source\repos\C_sharp_p134_NEW\C_sharp_p134\bin\Debug\C_sharp_p134.exe
+C:\Users\Keith\source\repos\C_sharp_p134_NEW\C_sharp_p134\bin\Debug\C_sharp_p134.pdb
+C:\Users\Keith\source\repos\C_sharp_p134_NEW\C_sharp_p134\obj\Debug\C_sharp_p134.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C_sharp_p134_NEW\C_sharp_p134\obj\Debug\C_sharp_p134.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C_sharp_p134_NEW\C_sharp_p134\obj\Debug\C_sharp_p134.exe
+C:\Users\Keith\source\repos\C_sharp_p134_NEW\C_sharp_p134\obj\Debug\C_sharp_p134.pdb
