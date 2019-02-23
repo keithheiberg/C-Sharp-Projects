@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C_sharp_p129\C_sharp_p129\obj\Debug\C_sharp_p129.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C_sharp_p129\C_sharp_p129\obj\Debug\C_sharp_p129.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C_sharp_p129\C_sharp_p129\bin\Debug\C_sharp_p129.exe.config
+C:\Users\Keith\source\repos\C_sharp_p129\C_sharp_p129\bin\Debug\C_sharp_p129.exe
+C:\Users\Keith\source\repos\C_sharp_p129\C_sharp_p129\bin\Debug\C_sharp_p129.pdb
+C:\Users\Keith\source\repos\C_sharp_p129\C_sharp_p129\obj\Debug\C_sharp_p129.exe
+C:\Users\Keith\source\repos\C_sharp_p129\C_sharp_p129\obj\Debug\C_sharp_p129.pdb
