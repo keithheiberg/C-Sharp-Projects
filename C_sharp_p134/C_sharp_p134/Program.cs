@@ -22,14 +22,35 @@ namespace C_sharp_p134
             try
             {
                 dayEntry = Console.ReadLine();
+                int dayNumber = Int32.Parse(dayEntry);
+                int x = (int)Enum.Parse(typeof(DaysOfTheWeek), dayEntry);
+                Console.WriteLine("Day number entered = " + x);
+                int y = (int)Enum.Parse(typeof(DaysOfTheWeek), today);
+                Console.WriteLine("Today's number = " + y);
                 Console.WriteLine("You entered: " + dayEntry);
                 Console.WriteLine("Today is: " + today);
                 Enum.Parse(typeof(DaysOfTheWeek), dayEntry);
-            }
-            catch (Exception ex)
+                if (dayEntry == today)
                 {
-                    Console.WriteLine(ex + "\nPlease enter an actual day of the week.");
+                    Console.WriteLine("Correct!");
                 }
+                else
+                {
+                    Console.WriteLine("Please enter an actual day of the week.");
+                }
+
+            }
+            catch 
+            {
+                if (dayEntry == today)
+                {
+                    Console.WriteLine("Correct!");
+                }
+                else
+                {
+                    Console.WriteLine("Please enter an actual day of the week.");
+                }
+            }
             Console.ReadLine();
         }
         public static DateTime Now { get; }
