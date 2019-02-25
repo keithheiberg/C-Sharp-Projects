@@ -16,8 +16,7 @@ namespace C_sharp_p129
             Employee employee2 = new Employee();
             employee1.Id = 1;
             employee2.Id = 2;
-            bool idEquals = (employee1.Id == employee2.Id);
-            Console.WriteLine("Are employee IDs equal? " + idEquals);
+            Console.WriteLine(employee1.Id == employee2.Id);
             Console.ReadLine();
         }
     }
