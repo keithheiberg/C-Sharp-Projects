@@ -78,12 +78,12 @@ namespace C_sharp_p129
         {
             if (employee1.Id != employee2.Id)
             {
-                bool idEquals = false;
+                bool idEquals = true;
                 return idEquals;
             }
             else
             {
-                bool idEquals = true;
+                bool idEquals = false;
                 return idEquals;
             }
         }
