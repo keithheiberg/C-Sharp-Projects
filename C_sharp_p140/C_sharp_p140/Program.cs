@@ -47,8 +47,13 @@ namespace C_sharp_p140
             {
                 if (employee.firstName == "Joe")
                 {
-                    Console.WriteLine("Employee: " + employee.firstName + " " + employee.lastName);
+                    Console.WriteLine("Foreach: Employee = " + employee.firstName + " " + employee.lastName);
                 }
+            }
+            Console.WriteLine("\nLambda:");
+            foreach (Employee employee in employeeList.FindAll(employee => (employee.firstName == "Joe")))
+            {
+                Console.WriteLine("Name = " + employee.firstName + "  " + employee.lastName);
             }
             Console.ReadLine();
         }
