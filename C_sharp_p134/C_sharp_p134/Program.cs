@@ -33,18 +33,10 @@ namespace C_sharp_p134
                 {
                     Console.WriteLine(dayEntry + "is not the current day of the week. Please try again.");
                 }
-
             }
             catch 
             {
-                if (dayEntry == today)
-                {
-                    Console.WriteLine("Correct!");
-                }
-                else
-                {
-                    Console.WriteLine(dayEntry + "is not the current day of the week. Please try again.");
-                }
+                Console.WriteLine(dayEntry + "is not the current day of the week. Please try again.");
             }
             Console.ReadLine();
         }
