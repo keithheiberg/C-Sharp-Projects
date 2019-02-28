@@ -43,17 +43,27 @@ namespace C_sharp_p140
                 employee9,
                 employee10
             };
+            var employeeList2 = new List<Employee>();
             foreach (Employee employee in employeeList)
             {
                 if (employee.firstName == "Joe")
                 {
+                    employeeList2.Add(new Employee() { firstName = employee.firstName, lastName = employee.lastName, ID = employee.ID });
                     Console.WriteLine("Foreach: Employee = " + employee.firstName + " " + employee.lastName);
                 }
             }
-            Console.WriteLine("\nLambda:");
+            Console.WriteLine("\nLambda: first name == Joe:");
+            var employeeList3 = new List<Employee>();
             foreach (Employee employee in employeeList.FindAll(employee => (employee.firstName == "Joe")))
             {
+                employeeList3.Add(new Employee() { firstName = employee.firstName, lastName = employee.lastName, ID = employee.ID });
                 Console.WriteLine("Name = " + employee.firstName + "  " + employee.lastName);
+            }
+            Console.WriteLine("\nLambda: ID > 5:");
+            foreach (Employee employee in employeeList.FindAll(employee => (employee.ID > 5)))
+            {
+                employeeList3.Add(new Employee() { firstName = employee.firstName, lastName = employee.lastName, ID = employee.ID });
+                Console.WriteLine("Name = " + employee.firstName + " " + employee.lastName + "; ID = " + employee.ID);
             }
             Console.ReadLine();
         }
