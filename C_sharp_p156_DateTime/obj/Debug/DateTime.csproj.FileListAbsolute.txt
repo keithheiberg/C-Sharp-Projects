@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C_sharp_p156_DateTime\obj\Debug\DateTime.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C_sharp_p156_DateTime\obj\Debug\DateTime.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C_sharp_p156_DateTime\bin\Debug\DateTime.exe.config
+C:\Users\Keith\source\repos\C_sharp_p156_DateTime\bin\Debug\DateTime.exe
+C:\Users\Keith\source\repos\C_sharp_p156_DateTime\bin\Debug\DateTime.pdb
+C:\Users\Keith\source\repos\C_sharp_p156_DateTime\obj\Debug\DateTime.exe
+C:\Users\Keith\source\repos\C_sharp_p156_DateTime\obj\Debug\DateTime.pdb
