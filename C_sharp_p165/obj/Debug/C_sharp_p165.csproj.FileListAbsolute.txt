@@ -1,0 +1,7 @@
+C:\Users\Keith\source\repos\C_sharp_p165\bin\Debug\C_sharp_p165.exe.config
+C:\Users\Keith\source\repos\C_sharp_p165\bin\Debug\C_sharp_p165.exe
+C:\Users\Keith\source\repos\C_sharp_p165\bin\Debug\C_sharp_p165.pdb
+C:\Users\Keith\source\repos\C_sharp_p165\obj\Debug\C_sharp_p165.csprojAssemblyReference.cache
+C:\Users\Keith\source\repos\C_sharp_p165\obj\Debug\C_sharp_p165.csproj.CoreCompileInputs.cache
+C:\Users\Keith\source\repos\C_sharp_p165\obj\Debug\C_sharp_p165.exe
+C:\Users\Keith\source\repos\C_sharp_p165\obj\Debug\C_sharp_p165.pdb
