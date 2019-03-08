@@ -8,14 +8,17 @@ namespace C_sharp_p162
 {
     class Bootcamp
     {
-        public Bootcamp(string name) : this(name, 100)
+        public Bootcamp(string name) : this(name, 110)
         {
         }
         public Bootcamp(string name, int firstCourse)
         {
-            string Name = name;
-            int Course = firstCourse;
+            Name = name;
+            Course = firstCourse;
         }
         const string courseName = "C# & .Net Framework Course";
+
+        public string Name { get; set; }
+        public int Course { get; set; }
     }
 }
