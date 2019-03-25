@@ -9,7 +9,7 @@ namespace C_sharp_p247.Controllers
 {
     public class AdminController : Controller
     {
-        private string connectionString;
+        private readonly string connectionString;
 
         // GET: Admin
         public ActionResult Index()
@@ -27,6 +27,14 @@ namespace C_sharp_p247.Controllers
                     signupVm.FirstName = signup.FirstName;
                     signupVm.LastName = signup.LastName;
                     signupVm.EmailAddress = signup.EmailAddress;
+                    signupVm.DOB = signup.DOB;
+                    signupVm.CarMake = signup.CarMake;
+                    signupVm.CarModel = signup.CarModel;
+                    signupVm.CarYear = signup.CarYear;
+                    signupVm.DUI = signup.DUI;
+                    signupVm.Tickets = signup.Tickets;
+                    signupVm.Coverage = signup.Coverage;
+
                     signupVms.Add(signupVm);
                 }
 

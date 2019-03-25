@@ -18,7 +18,8 @@ namespace C_sharp_p247.Controllers
         }
 
         [HttpPost]
-        public ActionResult SignUp(string firstName, string lastName, string emailAddress)
+        public ActionResult SignUp(string firstName, string lastName, string emailAddress, string dateOfBirth,
+            string carMake, string carModel, string carYear, string tickets, string coverage)
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress))
             {
@@ -29,9 +30,17 @@ namespace C_sharp_p247.Controllers
                 using (InsuranceEntities db = new InsuranceEntities())
                 {
                     var signup = new SignUp();
+                    signup.Id = Id;
                     signup.FirstName = firstName;
                     signup.LastName = lastName;
                     signup.EmailAddress = emailAddress;
+                    signup.DOB = dateOfBirth;
+                    signup.CarMake = carMake;
+                    signup.CarModel = carModel;
+                    signup.CarYear = carYear;
+                    signup.DUI = DUI;
+                    signup.Tickets = tickets;
+                    signup.Coverage = coverage;
 
                     db.SignUps.Add(signup);
                     db.SaveChanges();
