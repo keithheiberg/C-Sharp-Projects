@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_sharp_p247.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,16 +11,9 @@ namespace C_sharp_p247.Controllers
 {
     public class HomeController : Controller
     {
-        public int SignUp { get; private set; }
-
-        public ActionResult Index()
-        {
-            return View();
-        }
-
         [HttpPost]
-        public ActionResult SignUp(string firstName, string lastName, string emailAddress, string dateOfBirth,
-            string carMake, string carModel, string carYear, string tickets, string coverage)
+        public ActionResult SignUp(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,
+            string carMake, string carModel, int carYear, string DUI, int tickets, string coverage)
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress))
             {
@@ -30,7 +24,6 @@ namespace C_sharp_p247.Controllers
                 using (InsuranceEntities db = new InsuranceEntities())
                 {
                     var signup = new SignUp();
-                    signup.Id = Id;
                     signup.FirstName = firstName;
                     signup.LastName = lastName;
                     signup.EmailAddress = emailAddress;

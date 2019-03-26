@@ -1,4 +1,6 @@
-﻿using System;
+﻿using C_sharp_p247.Models;
+using C_sharp_p247.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -9,8 +11,6 @@ namespace C_sharp_p247.Controllers
 {
     public class AdminController : Controller
     {
-        private readonly string connectionString;
-
         // GET: Admin
         public ActionResult Index()
         {
@@ -23,7 +23,6 @@ namespace C_sharp_p247.Controllers
                 foreach (var signup in signups)
                 {
                     var signupVm = new SignUpVm();
-                    signupVm.Id = signup.Id;
                     signupVm.FirstName = signup.FirstName;
                     signupVm.LastName = signup.LastName;
                     signupVm.EmailAddress = signup.EmailAddress;
