@@ -13,10 +13,10 @@ namespace C_sharp_p247.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class InsuranceEntities : DbContext
+    public partial class InsuranceEntities1 : DbContext
     {
-        public InsuranceEntities()
-            : base("name=InsuranceEntities")
+        public InsuranceEntities1()
+            : base("name=InsuranceEntities1")
         {
         }
     
