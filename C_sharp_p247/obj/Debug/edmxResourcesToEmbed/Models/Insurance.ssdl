@@ -16,6 +16,7 @@
     <Property Name="Tickets" Type="int" />
     <Property Name="Coverage" Type="varchar" MaxLength="15" />
     <Property Name="Removed" Type="datetime" />
+    <Property Name="Quote" Type="money" />
   </EntityType>
   <EntityContainer Name="InsuranceModelStoreContainer">
     <EntitySet Name="SignUp" EntityType="Self.SignUp" Schema="dbo" store:Type="Tables" />

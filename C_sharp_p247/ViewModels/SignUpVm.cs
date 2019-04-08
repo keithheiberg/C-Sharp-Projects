@@ -19,5 +19,6 @@ namespace C_sharp_p247.ViewModels
         public Nullable<int> Tickets { get; set; }
         public string Coverage { get; set; }
         public Nullable<System.DateTime> Removed { get; set; }
+        public decimal Quote { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace C_sharp_p247.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            using (InsuranceEntities db = new InsuranceEntities())
+            using (InsuranceEntities2 db = new InsuranceEntities2())
             {
                 var signups = (from c in db.SignUps
                                where c.Removed == null
@@ -33,7 +33,8 @@ namespace C_sharp_p247.Controllers
                     signupVm.DUI = signup.DUI;
                     signupVm.Tickets = signup.Tickets;
                     signupVm.Coverage = signup.Coverage;
-
+                    signupVm.Removed = signup.Removed;
+                    signupVm.Quote = signup.Quote.GetValueOrDefault();
                     signupVms.Add(signupVm);
                 }
 
@@ -42,7 +43,7 @@ namespace C_sharp_p247.Controllers
         }
         public ActionResult Unsubscribe(int Id)
         {
-            using (InsuranceEntities db = new InsuranceEntities())
+            using (InsuranceEntities2 db = new InsuranceEntities2())
             {
                 var signup = db.SignUps.Find(Id);
                 signup.Removed = DateTime.Now;

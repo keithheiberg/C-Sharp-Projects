@@ -21,6 +21,7 @@
           <Property Name="Tickets" Type="int" />
           <Property Name="Coverage" Type="varchar" MaxLength="15" />
           <Property Name="Removed" Type="datetime" />
+          <Property Name="Quote" Type="money" />
         </EntityType>
         <EntityContainer Name="InsuranceModelStoreContainer">
           <EntitySet Name="SignUp" EntityType="Self.SignUp" Schema="dbo" store:Type="Tables" />
@@ -46,8 +47,9 @@
           <Property Name="Tickets" Type="Int32" />
           <Property Name="Coverage" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
           <Property Name="Removed" Type="DateTime" Precision="3" />
+          <Property Name="Quote" Type="Decimal" Precision="19" Scale="4" />
         </EntityType>
-        <EntityContainer Name="InsuranceEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="InsuranceEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="SignUps" EntityType="Self.SignUp" />
         </EntityContainer>
       </Schema>
@@ -55,7 +57,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="InsuranceModelStoreContainer" CdmEntityContainer="InsuranceEntities1">
+        <EntityContainerMapping StorageEntityContainer="InsuranceModelStoreContainer" CdmEntityContainer="InsuranceEntities2">
           <EntitySetMapping Name="SignUps">
             <EntityTypeMapping TypeName="InsuranceModel.SignUp">
               <MappingFragment StoreEntitySet="SignUp">
@@ -71,6 +73,7 @@
                 <ScalarProperty Name="Tickets" ColumnName="Tickets" />
                 <ScalarProperty Name="Coverage" ColumnName="Coverage" />
                 <ScalarProperty Name="Removed" ColumnName="Removed" />
+                <ScalarProperty Name="Quote" ColumnName="Quote" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
