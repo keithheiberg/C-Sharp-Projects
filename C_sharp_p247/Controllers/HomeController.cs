@@ -105,11 +105,11 @@ namespace C_sharp_p247.Controllers
                 {
                     quote = quote + (10.0m * tickets);
                 }
-                if (DUI == "Y")
+                if (DUI.ToLower() == "y")
                 {
                     quote = quote + (quote * 1.25m);
                 }
-                if (coverage == "full")
+                if (coverage.ToLower() == "full")
                 {
                     quote = quote + (quote * 1.5m);
                 }
