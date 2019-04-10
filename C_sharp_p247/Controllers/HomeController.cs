@@ -28,8 +28,8 @@ namespace C_sharp_p247.Controllers
 
         [HttpPost]
         public ActionResult SignUp(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,
-            string carMake, string carModel, int carYear, string DUI, int tickets, string coverage, 
-            DateTime removed, decimal quote)
+            DateTime removed, string carMake, string carModel, int carYear, string DUI, int tickets, 
+            string coverage, decimal quote)
         {
             using (InsuranceEntities2 db = new InsuranceEntities2())
             {
@@ -66,13 +66,13 @@ namespace C_sharp_p247.Controllers
             TimeSpan age = today - dateOfBirth;
             double ageInDays = 0.0;
             double daysInYear = 0.0;
-            double ageInYears = 0.0;               
+            double ageInYears = 0.0;
+            quote = 50.0m;
             try
             {
                 ageInDays = age.TotalDays;
                 daysInYear = 365.2425;
                 ageInYears = ageInDays / daysInYear;
-                quote = 50.0m;
                 if (ageInYears < 18.0)
                 {
                     quote = quote + 100.0m;

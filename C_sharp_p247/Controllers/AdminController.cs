@@ -34,7 +34,7 @@ namespace C_sharp_p247.Controllers
                     signupVm.Tickets = signup.Tickets;
                     signupVm.Coverage = signup.Coverage;
                     signupVm.Removed = signup.Removed;
-                    signupVm.Quote = signup.Quote.GetValueOrDefault();
+                    signupVm.Quote = signup.Quote;
                     signupVms.Add(signupVm);
                 }
 
