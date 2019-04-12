@@ -25,6 +25,10 @@ namespace C_sharp_p247.Controllers
         {
             return View();
         }
+        public ActionResult Success()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult SignUp(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,
@@ -33,46 +37,13 @@ namespace C_sharp_p247.Controllers
         {
             using (InsuranceEntities2 db = new InsuranceEntities2())
             {
-                var signup = new SignUp();
-                signup.FirstName = firstName;
-                signup.LastName = lastName;
-                signup.EmailAddress = emailAddress;
-                signup.DOB = dateOfBirth;
-                signup.CarMake = carMake;
-                signup.CarModel = carModel;
-                signup.CarYear = carYear;
-                signup.DUI = DUI;
-                signup.Tickets = tickets;
-                signup.Coverage = coverage;
-                signup.Removed = removed;
-                signup.Quote = quote;
+                DateTime today = DateTime.Today;
+                TimeSpan age = today - dateOfBirth;
+                double ageInDays = age.TotalDays;
+                double daysInYear = 365.2425;
+                double ageInYears = ageInDays / daysInYear;
+                quote = 50.0m;
 
-                db.SignUps.Add(signup);
-                db.SaveChanges();
-            }
-            //Start with a base of $50 / month.
-            //If the user is under 25, add $25 to the monthly total.
-            //If the user is under 18, add $100 to the monthly total.
-            //If the user is over 100, add $25 to the monthly total.
-            //If the car's year is before 2000, add $25 to the monthly total.
-            //If the car's year is after 2015, add $25 to the monthly total.
-            //If the car's Make is a Porsche, add $25 to the price.
-            //If the car's Make is a Porsche and its model is a 911 Carrera, add an additional $25 to the price.
-            //Add $10 to the monthly total for every speeding ticket the user has.
-            //If the user has ever had a DUI, add 25 % to the total.
-            //If it's full coverage, add 50% to the total.
-
-            DateTime today = DateTime.Today;
-            TimeSpan age = today - dateOfBirth;
-            double ageInDays = 0.0;
-            double daysInYear = 0.0;
-            double ageInYears = 0.0;
-            quote = 50.0m;
-            try
-            {
-                ageInDays = age.TotalDays;
-                daysInYear = 365.2425;
-                ageInYears = ageInDays / daysInYear;
                 if (ageInYears < 18.0)
                 {
                     quote = quote + 100.0m;
@@ -113,32 +84,35 @@ namespace C_sharp_p247.Controllers
                 {
                     quote = quote + (quote * 1.5m);
                 }
+
+                var signup = new SignUp();
+                signup.FirstName = firstName;
+                signup.LastName = lastName;
+                signup.EmailAddress = emailAddress;
+                signup.DOB = dateOfBirth;
+                signup.CarMake = carMake;
+                signup.CarModel = carModel;
+                signup.CarYear = carYear;
+                signup.DUI = DUI;
+                signup.Tickets = tickets;
+                signup.Coverage = coverage;
+                signup.Removed = removed;
+                signup.Quote = quote;
+
+                db.SignUps.Add(signup);
+                db.SaveChanges();
             }
-            catch (System.ArgumentNullException)
-            {
-                System.Console.WriteLine("String is null.");
-            }
-            catch (System.FormatException)
-            {
-                System.Console.WriteLine("String does not consist of an " +
-                                "optional sign followed by a series of digits.");
-            }
-            catch (System.OverflowException)
-            {
-                System.Console.WriteLine("Overflow in string to int conversion.");
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("An error occurred in your age entry. Please see your System Administrator.");
-                Console.ReadLine();
-            }
-            if (ageInYears < 1)
-            {
-                Console.WriteLine("Please enter a positive integer greater than zero.");
-                Console.ReadLine();
-            }
-            Console.WriteLine("You entered your age as: " + ageInYears);
-            Console.ReadLine();
+            //Start with a base of $50 / month.
+            //If the user is under 25, add $25 to the monthly total.
+            //If the user is under 18, add $100 to the monthly total.
+            //If the user is over 100, add $25 to the monthly total.
+            //If the car's year is before 2000, add $25 to the monthly total.
+            //If the car's year is after 2015, add $25 to the monthly total.
+            //If the car's Make is a Porsche, add $25 to the price.
+            //If the car's Make is a Porsche and its model is a 911 Carrera, add an additional $25 to the price.
+            //Add $10 to the monthly total for every speeding ticket the user has.
+            //If the user has ever had a DUI, add 25 % to the total.
+            //If it's full coverage, add 50% to the total.
 
             return RedirectToAction("Index");
         }

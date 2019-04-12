@@ -25,7 +25,7 @@ namespace C_sharp_p247.Models
         public string DUI { get; set; }
         public Nullable<int> Tickets { get; set; }
         public string Coverage { get; set; }
-        public DateTime Removed { get; set; }
+        public Nullable<System.DateTime> Removed { get; set; }
         public Nullable<decimal> Quote { get; set; }
     }
 }
