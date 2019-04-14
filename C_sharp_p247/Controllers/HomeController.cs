@@ -25,6 +25,7 @@ namespace C_sharp_p247.Controllers
         {
             return View();
         }
+
         public ActionResult Success()
         {
             return View();
@@ -32,8 +33,7 @@ namespace C_sharp_p247.Controllers
 
         [HttpPost]
         public ActionResult SignUp(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,
-            DateTime removed, string carMake, string carModel, int carYear, string DUI, int tickets, 
-            string coverage, decimal quote)
+            string carMake, string carModel, int carYear, string DUI, int tickets, string coverage)
         {
             using (InsuranceEntities2 db = new InsuranceEntities2())
             {
@@ -42,7 +42,7 @@ namespace C_sharp_p247.Controllers
                 double ageInDays = age.TotalDays;
                 double daysInYear = 365.2425;
                 double ageInYears = ageInDays / daysInYear;
-                quote = 50.0m;
+                decimal quote = 50.0m;
 
                 if (ageInYears < 18.0)
                 {
@@ -96,7 +96,6 @@ namespace C_sharp_p247.Controllers
                 signup.DUI = DUI;
                 signup.Tickets = tickets;
                 signup.Coverage = coverage;
-                signup.Removed = removed;
                 signup.Quote = quote;
 
                 db.SignUps.Add(signup);

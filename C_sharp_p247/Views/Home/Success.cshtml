@@ -1,46 +1,27 @@
-﻿<div class="row no-gutters m-3">
+﻿@using C_sharp_p247.Models
+@using System.Web.Mvc
+@model SignUp
+
+<div class="row no-gutters m-3">
     <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
         <div class="card-header text-center">
-            <h5 class="m-0">Your Monthly Quote</h5>
+            <h5 class="m-0">Monthly Quote</h5>
         </div>
         <div class="card-body">
-            @using (Html.BeginForm("SignUp", "Home", FormMethod.Get))
+            @using (Html.BeginForm("Success", "Home", FormMethod.Post))
             {
-                <div class="row no-gutters">
-                    <div class="form-group col-md-12">
-                        <input name="FirstName" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="LastName" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="EmailAddress" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="DOB" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="CarMake" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="CarModel" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="CarYear" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="DUI" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="Tickets" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="Coverage" type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input name="Quote" type="text" class="form-control" />
-                    </div>
+            <input type="hidden" name="Id" value="@signup.Id" />
+            <div class="row mb-3">
+                <div class="col-2">
+                    @signup.FirstName
                 </div>
+                <div class="col">
+                    @signup.LastName
+                </div>
+                <div class="col">
+                    @signup.Quote
+                </div>
+            </div>
             }
         </div>
     </div>
