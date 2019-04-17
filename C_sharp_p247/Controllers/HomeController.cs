@@ -113,7 +113,7 @@ namespace C_sharp_p247.Controllers
                 db.SaveChanges();
             }
 
-            return RedirectToAction("Index");
+            return View("Success", signup);
         }
     }
 }
