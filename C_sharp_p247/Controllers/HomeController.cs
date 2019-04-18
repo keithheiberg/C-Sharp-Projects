@@ -111,9 +111,9 @@ namespace C_sharp_p247.Controllers
 
                 db.SignUps.Add(signup);
                 db.SaveChanges();
+                return RedirectToAction("Success");
             }
 
-            return View("Success", signup);
         }
     }
 }

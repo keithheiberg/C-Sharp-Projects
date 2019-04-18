@@ -1,6 +1,8 @@
 ﻿@using C_sharp_p247.Models
+@using C_sharp_p247.Controllers
+@using C_sharp_p247.ViewModels
 @using System.Web.Mvc
-@model SignUp
+@signup
 
 <div class="row no-gutters m-3">
     <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
@@ -8,21 +10,17 @@
             <h5 class="m-0">Monthly Quote</h5>
         </div>
         <div class="card-body">
-            @using (Html.BeginForm("Success", "Home", FormMethod.Post))
-            {
-            <input type="hidden" name="Id" value="@signup.Id" />
-            <div class="row mb-3">
-                <div class="col-2">
-                    @signup.FirstName
+            <div class="row no-gutters">
+                <div class="form-group col-md-12">
+                    @signup.firstName
                 </div>
-                <div class="col">
-                    @signup.LastName
+                <div class="form-group col-md-12">
+                    @signup.lastName
                 </div>
-                <div class="col">
-                    @signup.Quote
+                <div class="form-group col-md-12">
+                    @signup.quote
                 </div>
             </div>
-            }
         </div>
     </div>
 </div>
