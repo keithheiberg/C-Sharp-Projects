@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BikeLogModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BikeLogModelStoreContainer">
+    <EntitySet Name="Logs" EntityType="BikeLogModel.Store.Logs" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="true" />
+    <Property Name="Miles" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Hours" Type="time" Nullable="true" Precision="7" />
+    <Property Name="AvgMPH" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="DaysSince" Type="int" Nullable="true" />
+  </EntityType>
+</Schema>
